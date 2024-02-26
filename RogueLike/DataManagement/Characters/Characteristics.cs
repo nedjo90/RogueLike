@@ -42,14 +42,14 @@ public class Characteristics
         string characteristics = string.Format(
                 "❤️{0, -30}⚔️{1,-30}🏃🏻{2,-30}\n", HealthPoints ,  Attack, Speed
             );
-        if(ListOfITriggerables != null)
-        {
-            characteristics += "Tools:\n";
-            foreach (ITriggerable trigger in ListOfITriggerables)
-            {
-                characteristics += $"- {trigger.ToString()}\n";
-            }
-        }
+        // if(ListOfITriggerables != null)
+        // {
+        //     characteristics += "Tools:\n";
+        //     foreach (ITriggerable trigger in ListOfITriggerables)
+        //     {
+        //         characteristics += $"- {trigger.ToString()}\n";
+        //     }
+        // }
         return characteristics;
     }
 }

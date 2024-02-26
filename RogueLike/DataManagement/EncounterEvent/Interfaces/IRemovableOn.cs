@@ -5,5 +5,8 @@ namespace RogueLike.DataManagement.EncounterEvent.Interfaces;
 
 public interface IRemovableOn
 {
-    public List<ModificationData> RemoveOn(Characteristics character);
+    public static List<ModificationData> RemoveOn(Characteristics character)
+    {
+        return new List<ModificationData>();
+    }
 }

@@ -5,5 +5,8 @@ namespace RogueLike.DataManagement.EncounterEvent.Interfaces;
 
 public interface IAddable
 {
-    public List<ModificationData> AddOn(Characteristics character);
+    public static List<ModificationData> AddOn(Characteristics character)
+    {
+        return new List<ModificationData>();
+    }
 }

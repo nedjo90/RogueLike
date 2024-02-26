@@ -15,9 +15,9 @@ public class CharacteristicsModifier : Encounter, ITriggerable
         _modifier = modifier;
         ListOfActionData = new List<ModificationData>();
     }
-    public void Trigger(Characteristics character)
+    public void Trigger(Characteristics Adventurer)
     {
-        ListOfActionData = _modifier(character);
+        ListOfActionData = _modifier(Adventurer);
     }
 
     public override string ToString()
@@ -27,7 +27,7 @@ public class CharacteristicsModifier : Encounter, ITriggerable
         {
             modificationInfo += (data.Value >= 0) ? " +" : " ";
             modificationInfo += $"{data.Value} " +
-                                $" {data.NameOfVariable}";
+                                $"{data.NameOfVariable}";
         }
         return modificationInfo;
     }

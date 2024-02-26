@@ -6,14 +6,16 @@ namespace RogueLike.DataManagement.EncounterEvent.Adders;
 
 public class Potion: ModifiedData, IAddable
 {
-    public List<ModificationData> AddOn(Characteristics character)
+    public static List<ModificationData> AddOn(Characteristics character)
     {
-        const string variableName = nameof(character.HealthPoints);
-        character.HealthPoints += 50;
-        if (character.HealthPoints > 100)
-            character.HealthPoints = 100;
-        ModificationData data = new ModificationData(50, variableName, character);
-        ModifiedDataList.Add(data);
-        return ModifiedDataList;
+            ModifiedDataList = new List<ModificationData>();
+           const string variableName = nameof(character.HealthPoints);
+           int value = 50;
+           character.HealthPoints += value;
+           if (character.HealthPoints > 100)
+               character.HealthPoints = 100;
+           ModificationData data = new ModificationData(value, variableName, character);
+           ModifiedDataList.Add(data);
+           return ModifiedDataList;
     }
 }
