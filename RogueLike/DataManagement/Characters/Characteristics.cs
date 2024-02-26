@@ -1,4 +1,7 @@
-namespace RogueLike;
+using RogueLike.DataManagement.EncounterEvent;
+using RogueLike.DataManagement.EncounterEvent.Interfaces;
+
+namespace RogueLike.DataManagement.Characters;
 
 public class Characteristics
 {

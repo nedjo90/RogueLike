@@ -1,4 +1,4 @@
-namespace RogueLike;
+namespace RogueLike.DataManagement.Identity;
 
 public class Identity
 {

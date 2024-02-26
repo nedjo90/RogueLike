@@ -1,4 +1,4 @@
-namespace RogueLike;
+namespace RogueLike.DataManagement.Random;
 
 public static class Randomizer
 {
@@ -8,12 +8,12 @@ public static class Randomizer
     }
     public static int GenerateNumber(int min, int max)
     {
-        Random random = new Random();
+        System.Random random = new System.Random();
         return random.Next(min, max);
     }
     public static int GenerateNumber(int max)
     {
-        Random random = new Random();
+        System.Random random = new System.Random();
         return random.Next(max);
     }
 }

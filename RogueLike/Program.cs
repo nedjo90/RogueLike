@@ -1,4 +1,6 @@
-﻿namespace RogueLike;
+﻿using RogueLike.DataManagement.Characters;
+
+namespace RogueLike;
 
 class Program
 {

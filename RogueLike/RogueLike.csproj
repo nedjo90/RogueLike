@@ -12,8 +12,10 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Using Include="RogueLike.Randomizer" Static="true" />
+        <Using Include="RogueLike.DataManagement.Random" Static="true" />
         <PackageReference Include="Lorem.NetCore" Version="1.0.0" />
     </ItemGroup>
+    
+    
 
 </Project>
