@@ -22,6 +22,6 @@ public class Adventurer : Identity
 
     public override string ToString()
     {
-        return $"{Name} : {Characteristics}";
+        return $"{Name} :";
     }
 }

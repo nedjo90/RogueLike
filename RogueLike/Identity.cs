@@ -6,7 +6,7 @@ public class Identity
 
     public Identity()
     {
-        Name = "Name is empty";
+        Name = LoremNETCore.Generate.Words(1);
     }
 
     public Identity(string name)

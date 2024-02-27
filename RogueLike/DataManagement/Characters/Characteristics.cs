@@ -1,5 +1,5 @@
 using RogueLike.DataManagement.EncounterEvent;
-using RogueLike.DataManagement.EncounterEvent.Interfaces;
+using RogueLike.DataManagement.EncounterEvent.Triggerable;
 
 namespace RogueLike.DataManagement.Characters;
 
@@ -40,7 +40,7 @@ public class Characteristics
     public override string ToString()
     {
         string characteristics = string.Format(
-                "❤️{0, -30}⚔️{1,-30}🏃🏻{2,-30}\n", HealthPoints ,  Attack, Speed
+                "❤️{0, -30}⚔️{1,-30}🏃🏻{2,-30}", HealthPoints ,  Attack, Speed
             );
         // if(ListOfITriggerables != null)
         // {
