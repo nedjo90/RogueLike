@@ -5,6 +5,8 @@ using RogueLike.DataManagement.EncounterEvent;
 using RogueLike.DataManagement.EncounterEvent.Fightable;
 using RogueLike.DataManagement.EncounterEvent.Main;
 using RogueLike.DataManagement.EncounterEvent.Triggerable;
+using RogueLike.DataManagement.Random;
+using Characteristics = System.Reflection.PortableExecutable.Characteristics;
 
 namespace RogueLike;
 
@@ -18,8 +20,7 @@ class Program
             List<IMeet> listOfMeet = new List<IMeet>();
             for (int j = 0; j < 30; j++)
             {
-                //listOfMeet.Add(GenerateMeetable());
-                listOfMeet.Add(new Monster());
+                listOfMeet.Add(Randomizer.GenerateMeetable());
             }
             Room newRoom = new Room(listOfMeet);
             listOfRoom.Add(newRoom);

@@ -42,7 +42,7 @@ public class Monster : Encounter, IMeet, IFightable
             }
             Console.SetCursorPosition(0, 0);
             Console.WriteLine($"{adventurer} => {adventurer.Characteristics}");
-            Console.SetCursorPosition(0, 35);
+            Console.SetCursorPosition(0, 30);
             Console.WriteLine($"{_character}<= {Name}");
             if (adventurer.Characteristics.HealthPoints == 0 || _character.HealthPoints == 0)
                 bothAlive = false;
